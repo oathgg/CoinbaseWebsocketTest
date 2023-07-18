@@ -7,8 +7,8 @@ using System.Text;
 
 BrokerClientWebSocket ws = new BrokerClientWebSocket("wss://advanced-trade-ws.coinbase.com", OnMessageReceived);
 string msg = GenerateMessage(
-    key: "xxxx",
-    secret: "xxxxx",
+    key: "xxxxx",
+    secret: "xxxxxx",
     productIds: new List<string> { "BTC-USDT", "BTC-USD", "BTC-USDC" },
     channelName: "user",
     unixTimeStamp: GetUnixTimeStamp());

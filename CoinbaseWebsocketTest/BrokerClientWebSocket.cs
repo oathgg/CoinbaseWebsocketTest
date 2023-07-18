@@ -41,7 +41,6 @@ namespace CoinbaseWebsocketTest
                                 string message = System.Text.Encoding.UTF8.GetString(Buffer, 0, result.Count);
                                 if (!string.IsNullOrEmpty(message))
                                 {
-                                    Console.WriteLine($"webSocketMsg: {message}");
                                     OnMessageReceived?.Invoke(message);
                                 }
                                 break;
